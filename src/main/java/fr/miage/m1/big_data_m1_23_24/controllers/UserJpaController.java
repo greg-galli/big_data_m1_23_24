@@ -2,6 +2,7 @@ package fr.miage.m1.big_data_m1_23_24.controllers;
 
 import fr.miage.m1.big_data_m1_23_24.entity.User;
 import fr.miage.m1.big_data_m1_23_24.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,11 +13,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users")
-public class UserController {
+public class UserJpaController {
 
     private final UserService userService;
 
-    public UserController(@Qualifier("userServiceImpl") UserService userService) {
+    @Autowired
+    public UserJpaController(@Qualifier("userServiceJpaImpl") UserService userService) {
         this.userService = userService;
     }
 
