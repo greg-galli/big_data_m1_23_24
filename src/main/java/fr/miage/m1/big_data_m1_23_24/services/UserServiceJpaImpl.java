@@ -1,7 +1,7 @@
 package fr.miage.m1.big_data_m1_23_24.services;
 
 import fr.miage.m1.big_data_m1_23_24.entity.User;
-import fr.miage.m1.big_data_m1_23_24.repositories.UserRepository;
+import fr.miage.m1.big_data_m1_23_24.repositories.UserJpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class UserServiceJpaImpl implements UserService {
 
-    private final UserRepository userRepository;
+    private final UserJpaRepository userRepository;
 
-    public UserServiceJpaImpl(UserRepository userRepository) {
+    public UserServiceJpaImpl(UserJpaRepository userRepository) {
         this.userRepository = userRepository;
     }
 

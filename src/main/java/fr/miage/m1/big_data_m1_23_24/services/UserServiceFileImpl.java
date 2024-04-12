@@ -1,7 +1,7 @@
 package fr.miage.m1.big_data_m1_23_24.services;
 
 import fr.miage.m1.big_data_m1_23_24.entity.User;
-import fr.miage.m1.big_data_m1_23_24.repositories.FileRepository;
+import fr.miage.m1.big_data_m1_23_24.repositories.UserFileRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class UserServiceFileImpl implements UserService {
 
-    private final FileRepository fileRepository;
+    private final UserFileRepository fileRepository;
 
-    public UserServiceFileImpl(FileRepository fileRepository) {
+    public UserServiceFileImpl(UserFileRepository fileRepository) {
         this.fileRepository = fileRepository;
     }
 

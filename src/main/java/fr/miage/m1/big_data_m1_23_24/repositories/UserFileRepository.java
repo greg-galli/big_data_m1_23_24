@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 
 @Component
-public class FileRepository {
+public class UserFileRepository {
 
     ObjectMapper objectMapper = new ObjectMapper();
 

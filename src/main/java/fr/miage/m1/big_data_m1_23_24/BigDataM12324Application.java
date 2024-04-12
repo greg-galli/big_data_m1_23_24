@@ -1,8 +1,6 @@
 package fr.miage.m1.big_data_m1_23_24;
 
 import fr.miage.m1.big_data_m1_23_24.entity.User;
-import fr.miage.m1.big_data_m1_23_24.repositories.FileRepository;
-import fr.miage.m1.big_data_m1_23_24.repositories.UserRepository;
 import fr.miage.m1.big_data_m1_23_24.services.UserService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
